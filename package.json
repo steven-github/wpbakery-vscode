@@ -1,15 +1,36 @@
 {
     "name": "wpbakery-vscode",
     "displayName": "WPBakery VSCode Support",
-    "description": "Syntax highlighting for WPBakery shortcodes",
-    "version": "0.0.1",
+    "description": "Syntax highlighting, snippets, and shortcode support for WPBakery Page Builder.",
+    "version": "0.0.4",
     "publisher": "stvn20",
+    "license": "MIT",
+    "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.80.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
+    "keywords": [
+        "wpbakery",
+        "wordpress",
+        "visual composer",
+        "shortcodes",
+        "page builder",
+        "php",
+        "html"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/steven-github/wpbakery-vscode.git"
+    },
+    "homepage": "https://github.com/steven-github/wpbakery-vscode",
+    "bugs": {
+        "url": "https://github.com/steven-github/wpbakery-vscode/issues"
+    },
+    "main": "./extension/extension.js",
     "contributes": {
         "languages": [
             {
@@ -31,6 +52,32 @@
                 "scopeName": "source.wpbakery",
                 "path": "./syntaxes/wpbakery.tmLanguage.json"
             }
-        ]
+        ],
+        "snippets": [
+            {
+                "language": "wpbakery",
+                "path": "./snippets/wpbakery.json"
+            }
+        ],
+        "configuration": {
+            "title": "WPBakery Formatter",
+            "properties": {
+                "wpbakeryFormatter.indentSize": {
+                    "type": "number",
+                    "default": 2,
+                    "description": "Number of spaces used for indentation."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "validate": "node ./scripts/validate-extension.js",
+        "vscode:prepublish": "npm run validate",
+        "package": "vsce package",
+        "publish": "vsce publish"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.80.0",
+        "@types/node": "^20.0.0"
     }
 }

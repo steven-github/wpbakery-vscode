@@ -1,0 +1,5 @@
+.git/**
+.vscode/**
+scripts/**
+*.vsix
+**/.DS_Store

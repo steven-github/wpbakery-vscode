@@ -1,0 +1,43 @@
+{
+    "VC Row": {
+        "prefix": "vc_row",
+        "body": [
+            "[vc_row${1: css=\"\"}]",
+            "\t$0",
+            "[/vc_row]"
+        ],
+        "description": "Insert a WPBakery row shortcode block."
+    },
+    "VC Column": {
+        "prefix": "vc_column",
+        "body": [
+            "[vc_column width=\"${1:1/1}\"]",
+            "\t$0",
+            "[/vc_column]"
+        ],
+        "description": "Insert a WPBakery column shortcode block."
+    },
+    "VC Column Text": {
+        "prefix": "vc_column_text",
+        "body": [
+            "[vc_column_text]",
+            "\t$0",
+            "[/vc_column_text]"
+        ],
+        "description": "Insert a WPBakery text content block."
+    },
+    "VC Button": {
+        "prefix": "vc_btn",
+        "body": [
+            "[vc_btn title=\"${1:Learn more}\" style=\"${2:flat}\" color=\"${3:primary}\" link=\"${4:url:https\\://example.com}\"]"
+        ],
+        "description": "Insert a WPBakery button shortcode."
+    },
+    "VC Single Image": {
+        "prefix": "vc_single_image",
+        "body": [
+            "[vc_single_image image=\"${1:123}\" img_size=\"${2:full}\" alignment=\"${3:center}\"]"
+        ],
+        "description": "Insert a WPBakery single image shortcode."
+    }
+}
