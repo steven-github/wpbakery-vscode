@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5
+
+- Fix shortcode indentation so WPBakery leaf shortcodes like `vc_single_image` do not shift closing tags out of alignment.
+
 ## 0.0.4
 
 - Add the missing WPBakery snippets contribution file so the declared snippet support is functional.

@@ -2,7 +2,7 @@
     "name": "wpbakery-vscode",
     "displayName": "WPBakery VSCode Support",
     "description": "Syntax highlighting, snippets, and shortcode support for WPBakery Page Builder.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "stvn20",
     "license": "MIT",
     "icon": "images/logo.png",

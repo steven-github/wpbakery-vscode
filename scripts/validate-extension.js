@@ -27,6 +27,11 @@ function validateFormatter() {
             input: "[wrapper][gallery ids=\"1,2\" /][/wrapper]",
             expected: ["[wrapper]", "  [gallery ids=\"1,2\" /]", "[/wrapper]"].join("\n"),
         },
+        {
+            name: "wpbakery leaf shortcode without explicit self close",
+            input: "[vc_row][vc_single_image image=\"1\"][/vc_row]",
+            expected: ["[vc_row]", "  [vc_single_image image=\"1\"]", "[/vc_row]"].join("\n"),
+        },
     ];
 
     cases.forEach(({ name, input, expected }) => {
