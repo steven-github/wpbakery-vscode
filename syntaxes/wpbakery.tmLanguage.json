@@ -1,0 +1,25 @@
+{
+    "scopeName": "source.wpbakery",
+    "patterns": [
+        {
+            "name": "support.function.wpbakery",
+            "match": "\\[/?vc_[a-zA-Z0-9_-]+"
+        },
+        {
+            "name": "entity.name.tag.wpbakery",
+            "match": "\\[/?[a-zA-Z0-9_-]+"
+        },
+        {
+            "name": "variable.parameter.wpbakery",
+            "match": "\\b[a-zA-Z0-9_-]+(?=\\=)"
+        },
+        {
+            "name": "string.quoted.double.wpbakery",
+            "match": "\"[^\"]*\""
+        },
+        {
+            "name": "punctuation.definition.tag.wpbakery",
+            "match": "\\[|\\]"
+        }
+    ]
+}

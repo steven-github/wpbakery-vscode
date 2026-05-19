@@ -1,0 +1,36 @@
+{
+    "name": "wpbakery-vscode",
+    "displayName": "WPBakery VSCode Support",
+    "description": "Syntax highlighting for WPBakery shortcodes",
+    "version": "0.0.1",
+    "publisher": "stvn20",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "wpbakery",
+                "aliases": [
+                    "WPBakery",
+                    "wpbakery"
+                ],
+                "extensions": [
+                    ".wpbakery",
+                    ".vc"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "wpbakery",
+                "scopeName": "source.wpbakery",
+                "path": "./syntaxes/wpbakery.tmLanguage.json"
+            }
+        ]
+    }
+}
